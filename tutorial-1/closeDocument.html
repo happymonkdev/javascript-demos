@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>DOM close Method</title> 
+        <style> 
+            h1, h2{ 
+            color:green; 
+        } 
+        body { 
+            text-align:center; 
+        } 
+        </style> 
+    </head> 
+    <body> 
+        <h1>GeeksForGeeks</h1> 
+        <h2>DOM close() Method</h2> 
+        <button onclick="geeks()">Submit</button> 
+        <script> 
+  
+            // This function is called on submit, it opens 
+            // a stream, write "PRACTICE" and then closes 
+            // the stream. 
+            function geeks() { 
+                var ss=window.open();
+                ss.document.open(); 
+                ss.document.write("<h1>PRACTICE</h1>"); 
+                ss.document.close(); 
+            } 
+        </script> 
+    </body> 
+</html>                     

@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>DOM createAttribute Method</title> 
+        <style> 
+            .gfg { 
+                color: green; 
+                font-weight:bold; 
+                font-size:50px; 
+            } 
+            body { 
+                text-align:center; 
+            } 
+        </style> 
+    </head> 
+    <body> 
+        <h1>GeeksforGeeks</h1> 
+        <h2>DOM createAttribute() Method</h2> 
+        <button onclick="geeks()">Submit</button> 
+        <script> 
+        function geeks() { 
+            var tag_name = document.getElementsByTagName("h1")[0]; 
+            var attr = document.createAttribute("class"); 
+            attr.value = "gfg"; 
+            tag_name.setAttributeNode(attr); 
+        } 
+        </script> 
+    </body> 
+</html>  
